@@ -1,0 +1,26 @@
+<div class="flex-container">
+  <header class="flexbox-header">
+    <h1>Post An Image</h1>
+  </header>
+  <form id="post image" class="flex-form" method="POST" enctype="multipart/form-data" action='/posts/createPost'> 
+    <fieldset>
+      <label>Title of Image</label>
+      <input type="text" id="title" name="title" placeholder="Title" required>
+      <br />
+      <label>Description</label>
+      <input type="text" id="desc" name="description" placeholder="Description" required>
+      <br />
+      <label>Choose an Image</label>
+      <input type="file" name="uploadImage" multiple="multiple" id="browse" required/>
+      <br />
+      <label for="AUP">
+        <a href="#AUP">Acceptable Use Policy</a>
+        <input type="checkbox" class="checked" required>
+        </label>
+    </fieldset>
+    <div class="flex-button" style="flex-grow: 1">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <br />
+</div>

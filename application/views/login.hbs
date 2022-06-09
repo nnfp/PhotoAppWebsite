@@ -1,0 +1,21 @@
+<div class="flex-container">
+  <header class="flexbox-header">
+    <h1>Login</h1>
+  </header>
+  <form class="flex-form" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+      <label>Username</label>
+      <input type="text" required name="username" placeholder="Username">
+      <br />
+      <label>Password</label>
+      <input type="password" required name="password" placeholder="Password">
+      <br />
+      <label><a href="/register">New? Register here.</a></label>
+    </fieldset>
+    <div class="flex-button">
+      <button type="submit">Login</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="reset">Clear</button>
+    </div>
+  </form>
+</div>

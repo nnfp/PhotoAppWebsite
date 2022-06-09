@@ -1,0 +1,45 @@
+<div class="grid-register-container">
+  <header class="grid-register-header">
+    <h1>Registration Form</h1>
+  </header>
+  <form class="grid-register-form" name="userDetails" id="userForm" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+    <fieldset id="register-fieldset">
+      <label>Username</label>
+      <input type="text" placeholder="Username" required name="username" id="unInput" class="userInfo" onkeyup="unValidation()">
+      <br />
+      <label>Email</label>
+      <input type="email" placeholder="Email" required name="email" id="useremail" class="userInfo" onkeyup="emailValidation()">
+      <br />
+      <label>Password</label>
+      <input type="password" placeholder="Password" class="userInfo password"required name="password" id="pwInput" onkeyup="pwValidation()">
+      <br />
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm Password" class="userInfo password" required name="cpassword" id="confirmInput" onkeyup="pwValidation()">
+      <br />
+      <label> I am 13+ years of age.<input type="checkbox" class="checked" required></label>
+      <br />
+      <label>
+        I have read the <a href="#TOS">TOS</a>
+        and <a href="#PR">Privacy Rules</a>.<input type="checkbox" class="checked" required></label>
+    </fieldset>
+    <div class="grid-register-button">
+      <button type="submit" id="register" onClick="processInfo()">Submit</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset" name="clear">Clear</button>
+    </div>
+  </form>
+  <div class="grid-register-validbox">
+    <p>Username must contain the following:</p>
+    <p id="unletter" class="invalid">Begins with a <b>letter</b></p>
+    <p id="unlength" class="invalid">Minimum <b>3 characters</b></p>
+    <p>Email must be <b id="emailValid" class="invalid">valid</b></p>
+    <p>Password must contain the following:</p>
+    <p id="pwlength" class="invalid">Minimum <b>8 characters</b></p>
+    <p id="pwcapital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="pwletter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="pwnumber" class="invalid">A <b>number</b></p>
+    <p id="pwspecial" class="invalid">A <b>special character</b></p>
+    <p id="pwmatch" class="invalid">Passwords must <b>match</b></p>
+  </div>
+  <br />
+</div>
